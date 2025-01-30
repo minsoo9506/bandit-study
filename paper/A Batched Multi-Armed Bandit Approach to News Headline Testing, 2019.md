@@ -1,0 +1,10 @@
+- 뉴스헤드라인을 뭐로 할지 bTS 로 진행
+- $K$ 개의 헤드라인을 arm, click 여부를 reward
+- bernoulli bandit problem with unknown $\theta_k$ (click prob)
+- time step $t \in [1,T]$ 마다 arm 을 선택해서 노출
+- 정해진 시간 마다 batch update 진행
+  - batch size 는 매번 달라지는 것
+- 알고리즘
+  - 각 노출 이벤트마다 $K$ arm 의 beta 분포에서 random sample 하고 가장 큰 값을 가진 $K$ 노출
+  - 클릭 여부를 합쳐서 $\alpha$, $\beta$ 에 더해서 beta 분포 파라미터 배치 업데이트
+  - 알고리즘은 48시간동안 돌리고 5분 마다 배치 업데이트
