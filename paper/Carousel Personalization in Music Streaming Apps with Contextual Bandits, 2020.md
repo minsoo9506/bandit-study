@@ -1,0 +1,22 @@
+- Deezer (음악 플랫폼)
+- 슬라이드해서 보는 컨텐츠 추천 (carousel: 회전목마)
+  - contextual multi-armed bandit 이용하여 multiple plays learning problem
+- 음악 card $i$ 가 user $u$ 에게 노출되서 클릭될 확률 $p_{ui}$(display-to-strem prob) 이고 이는 fixed 라고 가정
+- 이를 위해 일반적 유저마다 $N$ 개의 bandit 을 돌려서 높은 확률을 topk 를 사용할 수 있다. 하지만 이는 converge 하기에 시간이 너무 오래거린다. ($NK$)
+- 이를 해결하기 위해 2가지 방법 by leveraging contextual information
+  - 유저 데이터를 이용하여 클러스터링 하고 각 클러스터별 bandit 실행 ($NQ$)
+  - contextual multi-armed bandit ($ND$)
+- Cascade-Based Updates, Delayed Feedback
+  - 모든 아이템이 한번에 노출되지 않다보니 뒤쪽에 있는 아이템은 display-to-stream 이 underestimate 됨
+  - casacade model 에서 영감을 얻어서 casacade-based arm update model 만듬
+    - 각 round 마다 하나도 stream 한게 없으면 맨 처음 노출 한 것들 $L_{init}$ 만 노출되었다고 가정
+    - $i^{th}$ 노래를 들었으면 맨 처음부터 $i^{th}$ 번째 아이템은 다 노출되었다고 가정
+    - 참고: https://medium.com/expedia-group-tech/how-to-optimise-rankings-with-cascade-bandits-5d92dfa0f16b
+  - 그리고 reward 를 batch 로 처리 (e.g. daily)
+- 시뮬데이터로 실험
+  - semi-personal vs personal: ts-seg-pessimistic 이 가장 좋앗다. 리소스가 어렵다면 꼭 personal 로 할 필요는 없다
+  - delayed batch feedback: semi-personal 의 경우 ts-seg, e-greedy-seg 같이 stochastic policy 에서 더 좋았다
+  - casacade vs no-casacade: casacade 가 더 좋음
+- online 실험
+  - 매일 12개의 추천플레이리스트에 사용
+  - ts-seg-cascade 가 가장 좋았다

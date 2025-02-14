@@ -22,6 +22,8 @@
 - [An Empirical Evaluation of Thompson Sampling, 2011 Yahoo](https://papers.nips.cc/paper_files/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf)
 - [An Efficient Bandit Algorithm for Realtime Multivariate Optimization, 2018 Amazon](https://arxiv.org/abs/1810.09558)
   - `thomson-sampling`
+- [Carousel Personalization in Music Streaming Apps with Contextual Bandits, 2020 Deezer](https://arxiv.org/pdf/2009.06546)
+  - `casecade bandit`, `semi-personalized`
 
 ### blog
 - [카카오 AI추천 : 토픽 모델링과 MAB를 이용한 카카오 개인화 추천, 2021](https://tech.kakao.com/posts/445)
