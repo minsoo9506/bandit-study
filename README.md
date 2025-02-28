@@ -6,6 +6,13 @@
 - ucb [`reveiw`](./02_ucb.md) [`code`](./notebook/ucb.ipynb)
 - thomson sampling [`review`](./03_thomson_sampling.md) [`code`](./notebook/thomson_sampling.ipynb)
 
+## practice
+- Carousel Personalization in Music Streaming Apps with Contextual Bandits (RecSys 2020)
+  - https://github.com/deezer/carousel_bandits
+- OTTO Recommender Systems Dataset (coming soon)
+  - https://github.com/otto-de/recsys-dataset
+  - https://www.kaggle.com/competitions/otto-recommender-system/overview
+
 ## Reference
 
 ### paper
@@ -24,10 +31,13 @@
   - `thomson-sampling`
 - [Carousel Personalization in Music Streaming Apps with Contextual Bandits, 2020 Deezer](https://arxiv.org/pdf/2009.06546)
   - `casecade bandit`, `semi-personalized`
+- [Deep Bayesian Bandits: Exploring in Online Personalized Recommendations, 2020 Twitter](https://arxiv.org/pdf/2008.00727)
+  - `deep Bayesian bandits`, `ad display`
 
 ### blog
 - [카카오 AI추천 : 토픽 모델링과 MAB를 이용한 카카오 개인화 추천, 2021](https://tech.kakao.com/posts/445)
 - [Personalized Cuisine Filter, 2020 doordash](https://careersatdoordash.com/blog/personalized-cuisine-filter/)
+- [Artwork Personalization at Netflix, 2017](https://netflixtechblog.com/artwork-personalization-c589f074ad76)
 
 ### etc
 - [RecSys 2020 Tutorial: Introduction to Bandits in Recommender Systems, 2020](https://www.youtube.com/watch?v=rDjCfQJ_sYY&t=6s)

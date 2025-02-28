@@ -9,4 +9,4 @@
   - 그러면 boostrapping 이나 일반적인 dropout 할 때보다 computation cost 가 필요하다.
   - 예를 들어, p(ctr) 에 대해 ucb 를 구한다면 dropout layer 아래 layer 는 전체 데이터셋에 대해 1번만 forward 하고 dropout layer 에 대해 100번 forward 해서 상위 5% 의 결과를 사용한다.
 - experiment
-  - offline eval 시 random 에 비해 얼마나 상승했는지 비
+  - offline eval 시 random 에 비해 얼마나 상승했는지 비교
