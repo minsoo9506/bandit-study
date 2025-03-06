@@ -9,9 +9,9 @@
 ## practice
 - Carousel Personalization in Music Streaming Apps with Contextual Bandits (RecSys 2020)
   - https://github.com/deezer/carousel_bandits
-- OTTO Recommender Systems Dataset (coming soon)
-  - https://github.com/otto-de/recsys-dataset
-  - https://www.kaggle.com/competitions/otto-recommender-system/overview
+- Multi Armed Bandits for recommendation systems
+  - 모델 구현 예시 코드
+  - https://github.com/Heewon-Hailey/multi-armed-bandits-for-recommendation-systems/tree/main
 
 ## Reference
 
@@ -38,6 +38,8 @@
 - [카카오 AI추천 : 토픽 모델링과 MAB를 이용한 카카오 개인화 추천, 2021](https://tech.kakao.com/posts/445)
 - [Personalized Cuisine Filter, 2020 doordash](https://careersatdoordash.com/blog/personalized-cuisine-filter/)
 - [Artwork Personalization at Netflix, 2017](https://netflixtechblog.com/artwork-personalization-c589f074ad76)
+- [Recommending for Long-Term Member Satisfaction at Netflix, 2024](https://netflixtechblog.com/recommending-for-long-term-member-satisfaction-at-netflix-ac15cada49ef)
+- [Scroll into the Future: How eBay’s Multi-Arm Bandits Elevate Product Recommendations Through Dynamic Pagination, 2024](https://medium.com/@dschonfeld/scroll-into-the-future-how-ebays-multi-arm-bandits-elevate-product-recommendations-through-623ef2c75153)
 
 ### etc
 - [RecSys 2020 Tutorial: Introduction to Bandits in Recommender Systems, 2020](https://www.youtube.com/watch?v=rDjCfQJ_sYY&t=6s)

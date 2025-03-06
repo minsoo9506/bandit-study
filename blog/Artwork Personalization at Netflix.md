@@ -1,0 +1,14 @@
+- 영화 썸네일? artwork 을 노출할 때, 유저마다 다르게 하고 싶음
+- 노출은 한줄에 여러개의 영화별 artwork 노출
+- 힘든점
+  - artwork 가 중간에 바뀌는 경우 -> 유저가 혼란스러울 수 있음
+  - 다른 artwork 와의 영향
+  - 개인화를 위한 다양한 artwork 를 디자인해야함
+  - 이미지 로딩에 시간이 더 걸리는 만큼 추천 속도가 빨라야함
+- contextual bandits 접근
+  - 다양한 feature (영화 장르, 유저 device, 유저 선호 장르 등등) 를 만들어서 영화 재생 확률 계산 -> rank the artworks for each context -> 가장 높은 확률 노출
+- performance evaluation
+  - offline
+    -  offline technique known as replay 방법 사용
+    -  이론적으로 이해 불가, 유저별로 random assign 하고 이와 동일한 값을 가지는 model assign 에 대해서만 subset 평가
+  - online
