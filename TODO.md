@@ -1,0 +1,50 @@
+- https://eugeneyan.com/writing/bandits/
+- epsilon-greedy 부분 논문 2개 읽기
+  - [x] Explore, Exploit, and Explain: Personalizing Explainable Recommendations with Bandits, 2018
+  - [x] Deep neural network marketplace recommenders in online experiments, 2018
+- ucb
+  -  [x] A Contextual-Bandit Approach to Personalized News Article Recommendation, 2012
+  -  [x] Contextual User Browsing Bandits for Large-Scale Online Mobile Recommendation, 2020 Alibaba
+  -  [x] Contextual-Bandit Based Personalized Recommendation with Time-Varying User Interests, 2018
+-  thomson-sampling
+   - [x] https://careersatdoordash.com/blog/personalized-cuisine-filter/
+   - [x] An Empirical Evaluation of Thompson Sampling, 2011 Yahoo (https://papers.nips.cc/paper_files/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf)
+   - [x] An Efficient Bandit Algorithm for Realtime Multivariate Optimization, 2018 Amazon (https://arxiv.org/abs/1810.09558)
+ - 기타
+   - [x] Carousel Personalization in Music Streaming Apps with Contextual Bandits, 2020
+   - [x] (twitter) Deep Bayesian Bandits: Exploring in Online Personalized Recommendations (https://arxiv.org/abs/2008.00727)
+ - exploring new items - 2 options
+   - large exploration on a limited set of users
+   - small exploration on all users
+     - [x] Artwork Personalization at Netflix, 2017 (https://netflixtechblog.com/artwork-personalization-c589f074ad76)
+- evaluating bandit via off-policy evaluation
+  - [x] Unbiased Offline Evaluation of Contextual-bandit-based News Article Recommendation Algorithms (https://arxiv.org/abs/1003.5956)
+
+- 개념 설명 & 간단한 실습
+  - [x] epsilon-greedy
+  - [x] ucb
+  - [x] thomson-sampling
+
+- https://jungsooyun.github.io/mab/MAB-Survey/
+  - Non-stationary MAB
+    - Passively Adaptive Policies
+      - DiscountedUCB, SlidingWindowUCB  https://arxiv.org/abs/0805.3415
+      - Taming Non-stationary Bandits: A Bayesian Approach https://arxiv.org/pdf/1707.09727
+    - Actively Adaptive Policies
+      - A Change-Detection based Framework for Piecewise-stationary MAB Problem https://arxiv.org/abs/1711.03539
+      - A Neural Networks Committee for the Contextual Bandit Problem https://arxiv.org/abs/1409.8191
+      - Learning Contextual Bandits in a Non-stationary Environment https://dl.acm.org/doi/pdf/10.1145/3209978.3210051
+  - Context-Reward Relationship
+    - A Neural Networks Committee for the Contextual Bandit Problem https://arxiv.org/abs/1409.8191
+  - Multi-play
+    - Optimal Regret Analysis of Thompson Sampling in Stochastic MAB Problem with Multiple Plays (ICML 2015) 
+    - Click Models for Web Search (Authors’ version) https://www.semanticscholar.org/paper/Click-Models-for-Web-Search-Authors-%E2%80%99-version-*-Chuklin-Markov/0b19b37da5e438e6355418c726469f6a00473dc3?p2df
+    - Accurately interpreting clickthrough data as implicit feedback (SIGIR 2005)
+    - Cascading Bandits: Learning to Rank in the Cascade Model (ICML 2015) 
+    - Cascading Bandits for Large-Scale Recommendation Problems (UAI 2016)
+  - Combinatorial Bandit
+    - Combinatorial MAB: General Framework, Results and Applications (ICML 2013)
+    - Efficient Ordered Combinatorial Semi-Bandits for Whole-Page Recommendation (AAAI 2017)
+    - Contextual Combinatorial MAB with Volatile Arms and Submodular Reward (NIPS 2018)
+  - Batched Update
+    - [x] A Batched Multi-Armed Bandit Approach to News Headline Testing (IEEE BigData 2018)
